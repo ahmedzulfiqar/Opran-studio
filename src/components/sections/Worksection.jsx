@@ -3,7 +3,8 @@ import Worksec from "../desginblocks/Worksec";
 
 function Worksection() {
   return (
-    <div className="col-12 hefgg p-0" >
+
+    <div className="container hefgg  p-0" >
       <Worksec />
     </div>
   );

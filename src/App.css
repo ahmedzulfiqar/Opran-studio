@@ -86,7 +86,7 @@ body {
   min-height: 100vh !important;
   height: min-content !important;
 }
-.card-img-overlay {
+.card-image .card-img-overlay {
   background-color: #0000009b;
   transition: 0.5s ease;
   background-size: 100% 100%;
@@ -121,4 +121,54 @@ body {
 .dss:hover::after {
   transform: scaleX(1);
   transform-origin: left;
+}
+@media screen and (max-width: 800px) {
+  .mynavbarimg {
+    width: 10rem !important;
+  }
+}
+.filter {
+  backdrop-filter: blur(10px) !important;
+  background-color: #000000be;
+}
+.hero {
+  height: 75vh !important;
+  background-size: 100% 160%;
+  width: 100% !important;
+}
+.hero .card-img-overlay {
+  background-color: #00000076;
+}
+.rip {
+  font-family: "Trip Sans Bold";
+}
+.hero .card:hover .card-img-overlay {
+  opacity: 0;
+}
+.hero .card .card-img-overlay {
+  transition: 1s ease;
+  opacity: 1;
+}
+i {
+  cursor: pointer;
+}
+.realoff {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(10px) !important;
+  background-color: #000000be;
+  z-index: 1000;
+}
+.divd {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+i{
+  transition: .2s ease;
 }

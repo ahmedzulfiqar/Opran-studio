@@ -1,27 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../media/370258937_1000446534347484_6738224902469943689_n-removebg-preview.png";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 function Navbar() {
   const list = [
     { name: "Work", route: "/" },
     { name: "About Me", route: "/about" },
-    { name: "Contact Me", route: "/contact" },
   ];
+  const [open, setopen] = useState(false);
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primarys  ">
-        <div class="container-fluid px-5">
-          <a class="fs-2 text-main fw-bolder d-block" href="#">
+      <motion.nav
+        class="navbar navbar-expand-lg navbar-dark fixed-top  py-0 filter  "
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0 }}
+      >
+        <div class="container-fluid px-md-5">
+          <Link class="fs-2 text-main fw-bolder d-block" to={"/"}>
             <img src={logo} alt="" className="img-fluid mynavbarimg" />
-          </a>
+          </Link>
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar"
+            onClick={() => setopen(!open)}
           >
-            <i class="fa fa-bars text-main" aria-hidden="true"></i>
+            <i
+              class={`fa  text-main ${
+                !open ? "fa-bars" : "fa-xmark fa-rotate-90"
+              }`}
+              aria-hidden="true"
+            ></i>
           </button>
           <div class="collapse navbar-collapse mt-lg-0 mt-3" id="navbarNav">
             <ul class="navbar-nav ms-auto">
@@ -41,38 +50,32 @@ function Navbar() {
             </ul>
           </div>
         </div>
-      </nav>
-      <div
-        class="offcanvas offcanvas-start  py-3 p-0 text-light bg-primarys"
-        tabindex="-1"
-        id="offcanvasDarkNavbar"
-        aria-labelledby="offcanvasDarkNavbarLabel"
-      >
-        <div class="offcanvas-header p-0 pe-4">
-          <a class="fs-2 text-main fw-bolder d-block" href="#">
-            <img src={logo} alt="" className="img-fluid mynavbarimg" />
-          </a>
+      </motion.nav>
 
-          <i
-            class="fa fa-times display-6 text-main"
-            type="button"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-            aria-hidden="true"
-          ></i>
-        </div>
-        <div class="offcanvas-body px-0  ps-2 mt-0">
-          <ul class="navbar-nav justify-content-end flex-grow-1 sa">
-            {list.map((item) => {
+      {
+        <motion.div
+          className="realoff"
+          initial={{ opacity: 0, y: -2000 }}
+          animate={open ? { opacity: 1, y: 0 } : { opacity: 0, y: -2000 }}
+          transition={{ duration: 0.4, delay: 0 }}
+        >
+          <div className="divd">
+            {list.map((i) => {
               return (
-                <li class={`text-light mynavitem fw-bolder px-3  h5 py-3  m-0`}>
-                  {item.name}
-                </li>
+                <Link class="" to={i.route}  onClick={() => setopen(false)}>
+                  <a
+                    class="nav-link text-danger text-center my-2 fs-3 active  dss rounded-2 "
+                    aria-current="page"
+                    href={`#${i.name}`}
+                  >
+                    {i.name}
+                  </a>
+                </Link>
               );
             })}
-          </ul>
-        </div>
-      </div>
+          </div>
+        </motion.div>
+      }
     </>
   );
 }

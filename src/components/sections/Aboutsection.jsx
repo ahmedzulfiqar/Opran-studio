@@ -4,7 +4,7 @@ import Aboutcover from "../desginblocks/Aboutcover";
 
 function Aboutsection() {
   return (
-    <div className="col-12  hefg p-0">
+    <div className="container   p-0">
       <Aboutcover />
     </div>
   );
