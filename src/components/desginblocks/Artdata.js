@@ -22,7 +22,7 @@ const Artdata = [
   {
     Route: "",
     coverimg: img1,
-    coverimg2: imgu1,
+    coverimg2: imgu2,
     covertext: "Eternal Wait",
     headingvideo:
       "https://carbon-media.accelerator.net/0000000m9X0/cR1AClxK0jRbnArKdQSAqe;video.mp4",
@@ -71,7 +71,8 @@ const Artdata = [
   },
   {
     Route: "",
-    coverimg: img2,  coverimg2: imgu2,
+    coverimg: img2,
+    coverimg2: imgu1,
     covertext: "Despairing Guardian",
     headingvideo:
       "https://carbon-media.accelerator.net/0000000m9X0/cR1AClxK0jRbnArKdQSAqe;video.mp4",
@@ -120,7 +121,8 @@ const Artdata = [
   },
   {
     Route: "",
-    coverimg: img3,  coverimg2: imgu3,
+    coverimg: img3,
+    coverimg2: imgu3,
     covertext: "Edge of Existance",
     headingvideo:
       "https://carbon-media.accelerator.net/0000000m9X0/cR1AClxK0jRbnArKdQSAqe;video.mp4",
@@ -169,7 +171,8 @@ const Artdata = [
   },
   {
     Route: "",
-    coverimg: img4,  coverimg2: imgu4,
+    coverimg: img4,
+    coverimg2: imgu4,
     covertext: "Eternal Fire",
     headingvideo:
       "https://carbon-media.accelerator.net/0000000m9X0/cR1AClxK0jRbnArKdQSAqe;video.mp4",
@@ -218,7 +221,8 @@ const Artdata = [
   },
   {
     Route: "",
-    coverimg: img5,  coverimg2: imgu5,
+    coverimg: img5,
+    coverimg2: imgu5,
     covertext: "Little Nightmares",
     headingvideo:
       "https://carbon-media.accelerator.net/0000000m9X0/cR1AClxK0jRbnArKdQSAqe;video.mp4",
@@ -267,7 +271,8 @@ const Artdata = [
   },
   {
     Route: "",
-    coverimg: img6,  coverimg2: imgu6,
+    coverimg: img6,
+    coverimg2: imgu6,
     covertext: "Nature's Resurgence",
     headingvideo:
       "https://carbon-media.accelerator.net/0000000m9X0/cR1AClxK0jRbnArKdQSAqe;video.mp4",
@@ -316,7 +321,8 @@ const Artdata = [
   },
   {
     Route: "",
-    coverimg: img7,  coverimg2: imgu7,
+    coverimg: img7,
+    coverimg2: imgu8,
     covertext: "Steaming Forest",
     headingvideo:
       "https://carbon-media.accelerator.net/0000000m9X0/cR1AClxK0jRbnArKdQSAqe;video.mp4",
@@ -365,7 +371,8 @@ const Artdata = [
   },
   {
     Route: "",
-    coverimg: img8,  coverimg2: imgu8,
+    coverimg: img8,
+    coverimg2: imgu7,
     covertext: "Roman Artifact",
     headingvideo:
       "https://carbon-media.accelerator.net/0000000m9X0/cR1AClxK0jRbnArKdQSAqe;video.mp4",
@@ -413,7 +420,8 @@ const Artdata = [
     sliderimg: { img1: "", img2: "" },
   },
   {
-    Route: "",  coverimg2: imgu9,
+    Route: "",
+    coverimg2: imgu9,
     coverimg: img9,
     covertext: "The Fate of Japan",
     headingvideo:
@@ -463,7 +471,8 @@ const Artdata = [
   },
   {
     Route: "",
-    coverimg: img10,  coverimg2: imgu10,
+    coverimg: img10,
+    coverimg2: imgu10,
     covertext: "Separate Ways",
     headingvideo:
       "https://carbon-media.accelerator.net/0000000m9X0/cR1AClxK0jRbnArKdQSAqe;video.mp4",
