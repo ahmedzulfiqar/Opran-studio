@@ -8,11 +8,21 @@ import img7 from "../media/7.png";
 import img8 from "../media/8.png";
 import img9 from "../media/9.png";
 import img10 from "../media/10.png";
-import img11 from "../media/11.png";
+import imgu1 from "../media/u1.png";
+import imgu2 from "../media/u2.png";
+import imgu3 from "../media/u3.png";
+import imgu4 from "../media/u4.png";
+import imgu5 from "../media/u5.png";
+import imgu6 from "../media/u6.png";
+import imgu7 from "../media/u7.png";
+import imgu8 from "../media/u8.png";
+import imgu9 from "../media/u9.png";
+import imgu10 from "../media/u10.png";
 const Artdata = [
   {
     Route: "",
     coverimg: img1,
+    coverimg2: imgu1,
     covertext: "Eternal Wait",
     headingvideo:
       "https://carbon-media.accelerator.net/0000000m9X0/cR1AClxK0jRbnArKdQSAqe;video.mp4",
@@ -61,7 +71,7 @@ const Artdata = [
   },
   {
     Route: "",
-    coverimg: img2,
+    coverimg: img2,  coverimg2: imgu2,
     covertext: "Despairing Guardian",
     headingvideo:
       "https://carbon-media.accelerator.net/0000000m9X0/cR1AClxK0jRbnArKdQSAqe;video.mp4",
@@ -110,7 +120,7 @@ const Artdata = [
   },
   {
     Route: "",
-    coverimg: img3,
+    coverimg: img3,  coverimg2: imgu3,
     covertext: "Edge of Existance",
     headingvideo:
       "https://carbon-media.accelerator.net/0000000m9X0/cR1AClxK0jRbnArKdQSAqe;video.mp4",
@@ -159,7 +169,7 @@ const Artdata = [
   },
   {
     Route: "",
-    coverimg: img4,
+    coverimg: img4,  coverimg2: imgu4,
     covertext: "Eternal Fire",
     headingvideo:
       "https://carbon-media.accelerator.net/0000000m9X0/cR1AClxK0jRbnArKdQSAqe;video.mp4",
@@ -208,7 +218,7 @@ const Artdata = [
   },
   {
     Route: "",
-    coverimg: img5,
+    coverimg: img5,  coverimg2: imgu5,
     covertext: "Little Nightmares",
     headingvideo:
       "https://carbon-media.accelerator.net/0000000m9X0/cR1AClxK0jRbnArKdQSAqe;video.mp4",
@@ -257,7 +267,7 @@ const Artdata = [
   },
   {
     Route: "",
-    coverimg: img6,
+    coverimg: img6,  coverimg2: imgu6,
     covertext: "Nature's Resurgence",
     headingvideo:
       "https://carbon-media.accelerator.net/0000000m9X0/cR1AClxK0jRbnArKdQSAqe;video.mp4",
@@ -306,7 +316,7 @@ const Artdata = [
   },
   {
     Route: "",
-    coverimg: img7,
+    coverimg: img7,  coverimg2: imgu7,
     covertext: "Steaming Forest",
     headingvideo:
       "https://carbon-media.accelerator.net/0000000m9X0/cR1AClxK0jRbnArKdQSAqe;video.mp4",
@@ -355,7 +365,7 @@ const Artdata = [
   },
   {
     Route: "",
-    coverimg: img8,
+    coverimg: img8,  coverimg2: imgu8,
     covertext: "Roman Artifact",
     headingvideo:
       "https://carbon-media.accelerator.net/0000000m9X0/cR1AClxK0jRbnArKdQSAqe;video.mp4",
@@ -403,7 +413,7 @@ const Artdata = [
     sliderimg: { img1: "", img2: "" },
   },
   {
-    Route: "",
+    Route: "",  coverimg2: imgu9,
     coverimg: img9,
     covertext: "The Fate of Japan",
     headingvideo:
@@ -453,7 +463,7 @@ const Artdata = [
   },
   {
     Route: "",
-    coverimg: img10,
+    coverimg: img10,  coverimg2: imgu10,
     covertext: "Separate Ways",
     headingvideo:
       "https://carbon-media.accelerator.net/0000000m9X0/cR1AClxK0jRbnArKdQSAqe;video.mp4",

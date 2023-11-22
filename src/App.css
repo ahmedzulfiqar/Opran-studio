@@ -172,3 +172,6 @@ i {
 i{
   transition: .2s ease;
 }
+.sliderimg{
+  height: 50vh !important;
+}
