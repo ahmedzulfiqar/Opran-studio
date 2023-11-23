@@ -1,10 +1,15 @@
 * {
   text-decoration: none !important;
   list-style: none !important;
-  font-family: "Acme", sans-serif;
+  font-family: Trip Sans;
   letter-spacing: 2px;
 }
-
+.rip {
+  font-family: Trip Sans !important;
+}
+.cardfilter {
+  font-family: Trip Sans !important;
+}
 a {
   border: none !important;
   outline: none !important;
@@ -167,11 +172,32 @@ i {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50% , -50%);
+  transform: translate(-50%, -50%);
 }
-i{
-  transition: .2s ease;
+i {
+  transition: 0.2s ease;
 }
-.sliderimg{
+.sliderimg {
   height: 50vh !important;
+}
+
+@media screen and (max-width: 800px) {
+  .fd .card-img {
+    height: auto !important;
+  }
+  .sliderimg {
+    height: auto !important;
+  }
+  .hero {
+    height: auto !important;
+  }
+}
+.absolute {
+  position: fixed !important;
+  height: 100vh !important;
+  width: 100vw !important;
+  top: 0;
+  left: 0;
+  z-index: 1031;
+  background-color: var(--primary) !important;
 }

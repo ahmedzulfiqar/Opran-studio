@@ -12,7 +12,7 @@ function Aboutcover() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0 }}
     >
-      <div className="col-lg-6 col-12 mt-5  align-self-start">
+      <div className="col-lg-6 col-12 mt-md-5 mt-2  align-self-start">
         <div className="display-4 text-light ">
           <Carousel
             showArrows={true}
@@ -32,8 +32,12 @@ function Aboutcover() {
           </Carousel>
         </div>
       </div>
-      <div className="col-lg-6 col-12 mt-5 py-5 px-3 cardfilter ">
-        <div className="display-4 text-light mb-3 pt-2 ">
+      <div className="col-lg-6 col-12 mt-md-5 mt-4 py-md-5 py-2 px-3 cardfilter ">
+        <div className="display-4 text-light mb-3 pt-2 d-md-block d-none ">
+          About <span className="text-main">OPRAN STUDIO</span>
+          <hr />
+        </div>
+        <div className="display-6 text-light  d-md-none d-block mb-3 pt-2 ">
           About <span className="text-main">OPRAN STUDIO</span>
           <hr />
         </div>
