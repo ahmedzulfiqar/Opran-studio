@@ -18,11 +18,11 @@ function Projectpage() {
       transition={{ duration: 1.2, delay: 0 }}
     >
       <div className="row m-0 justify-content-center ">
-        <div className="col-12 p-0  hero">
+        <div className="col-12 p-0  hero hero2 ">
           <div className="">
             <Tilt tiltReverse={true} tiltMaxAngleX={7} tiltMaxAngleY={7}>
               <div class="card  text-bg-dark  bg-transparent border-0 ">
-                <img src={data.coverimg} class="hero " alt="..." />
+                <img src={data.coverimg} class="hero mx-auto" alt="..." />
                 <div class="card-img-overlay  text-center d-flex flex-column justify-content-center display-1 align-items-center">
                   {data.covertext}
                   <div className="display-6 fw-lighta">

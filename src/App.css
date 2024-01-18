@@ -139,7 +139,11 @@ body {
 .hero {
   height: 75vh !important;
   background-size: 100% 160%;
-  width: 100% !important;
+  width: 700px !important;
+  max-width: 100%;
+}
+.hero2 {
+  background-color: #ffffff00 !important;
 }
 .hero .card-img-overlay {
   background-color: #00000076;
